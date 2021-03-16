@@ -1,20 +1,28 @@
 package com.cli;
 
+import java.text.NumberFormat;
 import java.util.Arrays;
 import java.util.Date;
+
+import static java.text.NumberFormat.*;
 
 public class Main {
 //constants are declared by putting final at the beginning (before the type of variable) and their names in uppercase (convention)
 
     public static void main(String[] args) {
-        casting();
+        numberFormatting();
+    }
 
+    private static void numberFormatting(){
+       String result = NumberFormat.getPercentInstance().format(0.1); //method chaining
+       System.out.println(result);
     }
 
     private static void casting(){
         //Implicit casting: byte > short > int > long > float > double (all compatible)
-        double x = 1.1;
-        int y = (int)x + 2; //explicit casting by putting the type in brackets before the variable - between compatible types
+        String x = "1";
+        //use Integer/Double/Float/Short wrapper class to cast strings to numbers with respective parse methods
+        int y = Integer.parseInt(x) + 2;
         System.out.println(y);
     }
 
