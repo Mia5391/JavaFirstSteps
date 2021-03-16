@@ -7,9 +7,17 @@ public class Main {
 //constants are declared by putting final at the beginning (before the type of variable) and their names in uppercase (convention)
 
     public static void main(String[] args) {
-        arithmetic();
+        casting();
 
     }
+
+    private static void casting(){
+        //Implicit casting: byte > short > int > long
+        short x = 1;
+        int y = x + 2;
+        System.out.println(y);
+    }
+
     private static void arithmetic(){
         int x = 1;
     //    x = x + 2 can be better written like so:
