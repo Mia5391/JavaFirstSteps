@@ -12,9 +12,9 @@ public class Main {
     }
 
     private static void casting(){
-        //Implicit casting: byte > short > int > long
-        short x = 1;
-        int y = x + 2;
+        //Implicit casting: byte > short > int > long > float > double (all compatible)
+        double x = 1.1;
+        int y = (int)x + 2; //explicit casting by putting the type in brackets before the variable - between compatible types
         System.out.println(y);
     }
 
