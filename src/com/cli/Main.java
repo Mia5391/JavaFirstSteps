@@ -6,16 +6,14 @@ import java.util.Date;
 public class Main {
 
     public static void main(String[] args) {
-        replaceMessage();
-        printCurrentDate();
         manipulateArray();
 
     }
 
     private static void manipulateArray() {
-        int[] numbers = {2,3,5,1,4};
-        Arrays.sort(numbers);
-        System.out.println(Arrays.toString(numbers));
+        int[][][] numbers = new int[2][3][5];
+        numbers[0][0][0] = 1;
+        System.out.println(Arrays.deepToString(numbers));
     }
 
     private static void replaceMessage() {
