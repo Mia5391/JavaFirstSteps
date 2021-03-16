@@ -3,6 +3,7 @@ package com.cli;
 import java.text.NumberFormat;
 import java.util.Arrays;
 import java.util.Date;
+import java.util.Scanner;
 
 import static java.text.NumberFormat.*;
 
@@ -10,7 +11,13 @@ public class Main {
 //constants are declared by putting final at the beginning (before the type of variable) and their names in uppercase (convention)
 
     public static void main(String[] args) {
-        numberFormatting();
+        readingInput();
+    }
+
+    private static void readingInput(){
+        Scanner scanner = new Scanner(System.in); //to read from the terminal
+        byte age = scanner.nextByte();
+        System.out.println("You are " + age + " years old");
     }
 
     private static void numberFormatting(){
