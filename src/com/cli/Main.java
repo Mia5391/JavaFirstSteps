@@ -11,8 +11,10 @@ public class Main {
 
     }
     private static void arithmetic(){
-        double result = (double)10/(double)3;
-        System.out.println(result);
+        int x = 1;
+    //    x = x + 2 can be better written like so:
+            x += 2;
+        System.out.println(x);
     }
 
     private static void manipulateArray() {
