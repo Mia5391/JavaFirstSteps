@@ -11,12 +11,14 @@ public class Main {
 //constants are declared by putting final at the beginning (before the type of variable) and their names in uppercase (convention)
 
     public static void main(String[] args) {
+
         readingInput();
     }
 
     private static void readingInput(){
         Scanner scanner = new Scanner(System.in); //to read from the terminal
-        byte age = scanner.nextByte();
+        System.out.print("How old are you?");
+        float age = scanner.nextFloat();
         System.out.println("You are " + age + " years old");
     }
 
