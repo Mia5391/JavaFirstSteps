@@ -17,9 +17,9 @@ public class Main {
 
     private static void readingInput(){
         Scanner scanner = new Scanner(System.in); //to read from the terminal
-        System.out.print("How old are you?");
-        float age = scanner.nextFloat();
-        System.out.println("You are " + age + " years old");
+        System.out.print("What's your name?");
+        String userName = scanner.nextLine().trim(); //next() reads one token at a time, nextLine() reads however many there are
+        System.out.println("Your name is: " + userName);
     }
 
     private static void numberFormatting(){
